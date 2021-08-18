@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --primary-color: #2F4E68;
+    --seconday-color: #C8A3B5;
+    --tertiary-color: #FDBE83;
+}
+
+body {
+    background-color: var(--tertiary-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* header & nav styles */
+
+header {
+    padding: 20px 35px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    /* need to figure out color */
+}
+
+header a {
+    text-decoration: none;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header h1:hover {
+    background: var(--primary-color); /* doesn't work - needs fixin */
+    color: var(--seconday-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 15px 15px;
+}
+
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--seconday-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+/* header & nav stlye end */
+
+/* hero style start */
+
+.hero {
+    background-image: ;
+    
+}
