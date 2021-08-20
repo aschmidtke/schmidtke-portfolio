@@ -33,6 +33,7 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 36px;
+    color: var(--primary-color);
     text-decoration: none;
     /* need to figure out color */
 }
@@ -47,7 +48,7 @@ header nav {
 }
 
 header h1:hover {
-    background: var(--primary-color); /* doesn't work - needs fixin */
+    background: var(--tertiary-color); /* doesn't work - needs fixin */
     color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
@@ -65,11 +66,10 @@ header nav ul li a {
     margin: 0 30px;
     padding: 15px 15px;
     font-weight: lighter;
-    font-size: 1vw;
 }
 
 header nav ul li a:hover {
-    background: var(--primary-color);
+    background: var(--tertiary-color);
     color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
@@ -82,7 +82,6 @@ header nav ul li a:hover {
 .hero {
     margin: 20px 0;
     padding: 20px 0;
-    border: solid 7px var(--secondary-color);
     border-radius: 5%;
     display: flex;
     justify-content: center;
@@ -113,32 +112,35 @@ header nav ul li a:hover {
 /* work-examples style start */
 
 .work {
+    margin: 20px 0;
+    padding: 20px 0;
+    border: solid 7px var(--secondary-color);
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    color: var(--secondary-color);
 
 }
 
 .run-buddy {
     margin: 20px 0;
     padding: 20px 0;
-    border: solid 7px var(--secondary-color);
+    width: 100%;
+    text-align: center;
 
 }
 
-.other-work {
-    margin: 20px 0;
-    padding: 20px 0;
-    border: solid 7px var(--secondary-color);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-
+.run-buddy h3 {
+    font-style: italic;
+    font-size: 55px;
 }
 
 .work-item {
     width: 33%;
     text-align: center;
     margin: 3.5%;
-    color: var(--secondary-color);
 }
 
 /* work-examples style end */
@@ -148,7 +150,6 @@ header nav ul li a:hover {
 .contact {
     margin: 20px 0;
     padding: 20px 0;
-    border: solid 7px var(--secondary-color);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
