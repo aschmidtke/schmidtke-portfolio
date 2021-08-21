@@ -6,21 +6,23 @@
 }
 
 :root {
-    --primary-color: #2F4E68;
-    --secondary-color: #C8A3B5;
-    --tertiary-color: #FDBE83;
+    --primary-color: #F2F1ED;
+    --secondary-color: #444;
+    --tertiary-color: #DE5A51;
 }
 
 body {
     background-color: var(--primary-color);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 /* header & nav styles */
 
 header {
     padding: 20px 35px;
-    background-color: var(--tertiary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-bottom: solid 1px var(--tertiary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -28,6 +30,11 @@ header {
     position: sticky;
     top: 0;
     z-index: 9999;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+    0 2px 2px rgba(0,0,0,0.12),
+    0 4px 4px rgba(0,0,0,0.12),
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
 }
 
 header h1 {
@@ -35,6 +42,7 @@ header h1 {
     font-size: 36px;
     color: var(--primary-color);
     text-decoration: none;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     /* need to figure out color */
 }
 
@@ -48,9 +56,7 @@ header nav {
 }
 
 header h1:hover {
-    background: var(--tertiary-color); /* doesn't work - needs fixin */
-    color: var(--secondary-color);
-    border-radius: 15px;
+    color: var(--tertiary-color);
     text-shadow: none;
 }
 
@@ -66,13 +72,17 @@ header nav ul li a {
     margin: 0 30px;
     padding: 15px 15px;
     font-weight: lighter;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav ul li a:hover {
-    background: var(--tertiary-color);
-    color: var(--secondary-color);
-    border-radius: 15px;
+    color: var(--tertiary-color);
     text-shadow: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 /* header & nav stlye end */
@@ -90,8 +100,17 @@ header nav ul li a:hover {
 }
 
 .hero-about-img {
-    border: solid 3px var(--secondary-color);
 
+}
+
+.hero-about-img img {
+    border: solid 1px var(--tertiary-color);
+    border-radius: 50%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+                0 2px 2px rgba(0,0,0,0.12),
+                0 4px 4px rgba(0,0,0,0.12),
+                0 8px 8px rgba(0,0,0,0.12),
+                0 16px 16px rgba(0,0,0,0.12);
 }
 
 .hero-about-text {
@@ -99,6 +118,7 @@ header nav ul li a:hover {
     text-align: left;
     margin: 3.5%;
     color: var(--secondary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .hero-about-text h2 {
@@ -114,13 +134,17 @@ header nav ul li a:hover {
 .work {
     margin: 20px 0;
     padding: 20px 0;
-    border: solid 7px var(--secondary-color);
-    border-radius: 5%;
+    border-top: solid 5px var(--secondary-color);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
     color: var(--secondary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.08),
+                0 2px 2px rgba(0,0,0,0.12),
+                0 4px 4px rgba(0,0,0,0.16),
+                0 8px 8px rgba(0,0,0,0.20),
 
 }
 
@@ -129,7 +153,7 @@ header nav ul li a:hover {
     padding: 20px 0;
     width: 100%;
     text-align: center;
-
+    text-decoration: none;
 }
 
 .run-buddy h3 {
@@ -141,6 +165,22 @@ header nav ul li a:hover {
     width: 33%;
     text-align: center;
     margin: 3.5%;
+}
+
+.work-item img {
+    width: 30%;
+    height: auto;
+    border: 1px solid var(--tertiary-color);
+    border-radius: 30%;
+}
+
+.work-item:hover {
+    color: var(--tertiary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.work-item img:hover {
+   transform: scale(1.08);
 }
 
 /* work-examples style end */
