@@ -98,7 +98,7 @@ a:visited {
 
 .hero {
     margin: 20px 0;
-    padding: 20px 0;
+    padding: 40px 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -169,10 +169,8 @@ a:visited {
     color: var(--secondary-color);
 }
 
-.work-item {
-    width: 33%;
-    text-align: center;
-    margin: 3.5%;
+.run-buddy img:hover {
+    transform: scale(1.01);
 }
 
 .work img {
@@ -181,6 +179,11 @@ a:visited {
     border: 1px solid var(--tertiary-color);
     border-radius: 30%;
 }
+.work-item {
+    width: 33%;
+    text-align: center;
+    margin: 3.5%;
+}
 
 .work-item:hover {
     color: var(--tertiary-color);
@@ -188,7 +191,7 @@ a:visited {
 }
 
 .work-item img:hover {
-   transform: scale(1.08);
+   transform: scale(1.01);
 }
 
 /* work-examples style end */
