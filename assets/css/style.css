@@ -50,7 +50,6 @@ header h1 {
     color: var(--primary-color);
     text-decoration: none;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    /* need to figure out color */
 }
 
 header a {
@@ -73,6 +72,7 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    text-decoration: none;
 }
 
 header nav ul li a {
@@ -80,6 +80,7 @@ header nav ul li a {
     padding: 15px 15px;
     font-weight: lighter;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
 }
 
 header nav ul li a:hover {
